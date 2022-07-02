@@ -13,17 +13,12 @@ export const fetchTodos = createAsyncThunk(
 
 export const addNewTodos = createAsyncThunk(
     'todos/addNewTodos',
-    async function(text, {rejectWithValue, dispatch}){
-        const todo = {
+    async function(text, {dispatch}){
+        const response = await axios.post('https://jsonplaceholder.typicode.com/todos',{
             title: text,
             userId: 1,
             completed: false,
-        };
-        const response = await axios.post('https://jsonplaceholder.typicode.com/todos',{
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body : todo
+            
         })
         const data = await response.data
         dispatch(addTodos(data))
