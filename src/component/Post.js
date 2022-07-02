@@ -18,7 +18,11 @@ function Posts(){
                         <input />
                         <button>send</button>
                     </div>
-                    
+                    {todos.map(item=>(
+                        <div className={style.items}>
+                           <h2>{item.title}</h2>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
