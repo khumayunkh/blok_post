@@ -5,7 +5,7 @@ import axios from "axios"
 export const fetchTodos = createAsyncThunk(
     'todos/fetchTodos',
     async function(){
-        const response = await axios.get('https://jsonplaceholder.typicode.com/todos')
+        const response = await axios.get('https://jsonplaceholder.typicode.com/todos/?_limit=10')
         const data = response.data
         return data
     }
