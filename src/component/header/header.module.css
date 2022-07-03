@@ -1,0 +1,20 @@
+.header_in{
+    background-color: rgb(25, 17, 51);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img{
+    margin-top: -1.4%;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.contact{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    color: white;
+}

@@ -8,9 +8,13 @@ function Header(){
             <div className={style.container}>
                 <div className={style.header_in}>
                     <div className={style.logo}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/1280px-Slack_Technologies_Logo.svg.png"/>
+                        <img src="https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png"/>
                     </div>
-
+                    <div className={style.contact}>
+                        <h3>Contact</h3>
+                        <h3>About Us</h3>
+                        <h3>Email</h3>
+                    </div>
                 </div>
             </div>
         </div>
