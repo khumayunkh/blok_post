@@ -1,6 +1,6 @@
 import Footer from './component/footer/footer';
 import Header from './component/header/header';
-import Posts from './component/Post';
+import Posts from './component/Posts/Post';
 
 function App() {
   return (
