@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addNewTodos, addTodos, fetchTodos, removeTodos } from "../store/PostSlice";
+import { addNewTodos,  fetchTodos } from "../store/PostSlice";
 import style from './post.module.css'
 
 
@@ -8,9 +8,11 @@ function Posts(){
     const todos = useSelector(state => state.todos.todos)
     const dispatch = useDispatch()
     const [text, setText] = useState('')
+    
     useEffect(() => {
         dispatch(fetchTodos())
     },[])
+
     const handleAction = () => {
           dispatch(addNewTodos(text));
           setText('');
