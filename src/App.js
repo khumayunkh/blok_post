@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import Footer from './component/footer/footer';
 import Header from './component/header/header';
 import Posts from './component/Posts/Post';

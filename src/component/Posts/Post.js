@@ -10,7 +10,7 @@ function Posts(){
     const todos = useSelector(state => state.todos.todos)
     const dispatch = useDispatch()
     const [text, setText] = useState('')
-    const [currentPage,setCurrentPage] = useState(5)
+    const [currentPage,setCurrentPage] = useState(1)
     const [todosPerPage, setPostsPerPage] = useState(5)
     
     useEffect(() => {

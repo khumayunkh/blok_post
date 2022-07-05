@@ -1,0 +1,4 @@
+.contacts_in{
+    display: flex;
+    flex-direction: column;
+}
