@@ -17,4 +17,12 @@
     width: 30%;
     justify-content: space-evenly;
     color: white;
+    align-items: center;
+}
+
+.information{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
 }

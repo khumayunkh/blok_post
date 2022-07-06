@@ -32,8 +32,8 @@ function Posts(){
         <div className={style.posts}>
             <div className={style.posts_in}>
                     <div className={style.input}>
-                        <input value={text} onChange={e => setText(e.target.value)}/>
-                        <button onClick={handleAction}>send</button>
+                        <input className={style.input_in} value={text} onChange={e => setText(e.target.value)}/>
+                        <button className={style.send} onClick={handleAction}>send</button>
                     </div>
             <Post todos={currentPosts}/>
             <Pagination 

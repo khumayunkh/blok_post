@@ -18,7 +18,7 @@
     background-size: 20%;
 }
 
-input{
+.input_in{
     background-color: white;
     border-style: none;
     height: 4vh;
@@ -28,15 +28,14 @@ input{
     box-shadow: 1px 10px 15px rgb(117, 116, 116);  
     padding-left: 25px;
 }
-button{
+.send{
     background-color: white;
     border-style: none;
     height: 4vh;
     width: 8vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 1px 10px 15px rgb(117, 116, 116);  
-    padding-left: 25px;
+    box-shadow: 1px 10px 15px rgb(117, 116, 116);
 }
 
 .items{

@@ -8,11 +8,14 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Posts/>
       <Routes>
       <Route
         path='/contacts'
         element={<Contacts/>}
+      />
+      <Route
+        path='/'
+        element={<Posts/>}
       />
       </Routes>
       <Footer/>

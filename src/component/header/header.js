@@ -13,7 +13,7 @@ function Header(){
                         <img src="https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png"/>
                     </div>
                     <div className={style.contact}>
-                        <NavLink to='/contacts'>Contacts</NavLink>
+                        <NavLink className={style.information} to='/contacts'>Contacts</NavLink>
                         <h3>About Us</h3>
                         <h3>Email</h3>
                     </div>

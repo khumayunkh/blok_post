@@ -8,9 +8,9 @@ function Contacts(){
             <div className={style.container}>
                 <div className={style.contacts_in}>
                     <h2>Обратная связь</h2>
-                    <input className={style.name}/>
-                    <input className={style.number}/>
-                    <input className={style.comments}/>
+                    <input placeholder="Имя" className={style.name}/>
+                    <input placeholder="Номер" className={style.number}/>
+                    <input placeholder="Введите комментарий" className={style.comments}/>
                     <button className={style.btn}>ЗАПРОС ЗВОНКА</button>
                 </div>
             </div>
