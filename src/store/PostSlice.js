@@ -1,11 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
+import { getTodos } from "../api"
 
 
 export const fetchTodos = createAsyncThunk(
     'todos/fetchTodos',
     async function(){
-        const response = await axios.get('https://jsonplaceholder.typicode.com/todos/?_limit=15')
+        const response = getTodos()
         const data = response.data
         return data
     }
