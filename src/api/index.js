@@ -5,7 +5,7 @@ export const getTodos = async() => {
 }
 
 
-export const addTodos = async(text) => {
+export const addNewTodos = async(text) => {
     return await axios.post('https://jsonplaceholder.typicode.com/todos',{
         title: text,
         userId: 1,

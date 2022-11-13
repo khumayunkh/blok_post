@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
-import { getTodos } from "../api"
+import { getTodos, addNewTodos } from "../api"
 
 
 export const fetchTodos = createAsyncThunk(
@@ -12,15 +12,10 @@ export const fetchTodos = createAsyncThunk(
     }
 )
 
-export const addNewTodos = createAsyncThunk(
+export const addNewTodosThunk = createAsyncThunk(
     'todos/addNewTodos',
     async function(text, {dispatch}){
-        const response = await axios.post('https://jsonplaceholder.typicode.com/todos',{
-            title: text,
-            userId: 1,
-            completed: false,
-            
-        })
+        const response = await addNewTodos(text)
         const data = await response.data
         dispatch(addTodos(data))
     }
